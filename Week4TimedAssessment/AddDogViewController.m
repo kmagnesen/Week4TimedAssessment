@@ -2,7 +2,7 @@
 //  AddDogViewController.m
 //  Week4TimedAssessment
 //
-//  Created by Kyle Magnesen on 1/29/15.
+//  Created by Kyle Magnesen on 1/30/15.
 //  Copyright (c) 2015 MobileMakers. All rights reserved.
 //
 
@@ -10,28 +10,46 @@
 
 @interface AddDogViewController ()
 
+@property (strong, nonatomic) IBOutlet UITextField *colorTextField;
+@property (strong, nonatomic) IBOutlet UITextField *breedTextField;
+@property (strong, nonatomic) IBOutlet UITextField *nameTextField;
+
 @end
 
 @implementation AddDogViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.title = @"Add Dog";
+    
+    if (self.dogSelect) {
+        self.nameTextField.text = self.dogSelect.name;
+        self.breedTextField.text = self.dogSelect.breed;
+        self.colorTextField.text = self.dogSelect.color;
+
+    }
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)onFinishButtonTapped:(UIButton *)sender {
+    if (self.dogSelect) { //update core data process
+
+        self.dogSelect.name = self.nameTextField.text;
+        self.dogSelect.breed = self.breedTextField.text;
+        self.dogSelect.color = self.colorTextField.text;
+        [self.dogSelect.managedObjectContext save:nil];
+
+    }else{
+
+        Dog *dog = [NSEntityDescription insertNewObjectForEntityForName:@"Dog" inManagedObjectContext:self. ownerSelected.managedObjectContext];
+        dog.name = self.nameTextField.text;
+        dog.breed = self.breedTextField.text;
+        dog.color = self.colorTextField.text;
+        [self.ownerSelected addDogsObject:dog];
+
+        [self.ownerSelected.managedObjectContext save:nil];
+    }
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

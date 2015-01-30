@@ -2,7 +2,7 @@
 //  Person.h
 //  Week4TimedAssessment
 //
-//  Created by Kyle Magnesen on 1/29/15.
+//  Created by Kyle Magnesen on 1/30/15.
 //  Copyright (c) 2015 MobileMakers. All rights reserved.
 //
 
@@ -22,5 +22,7 @@
 - (void)removeDogsObject:(NSManagedObject *)value;
 - (void)addDogs:(NSSet *)values;
 - (void)removeDogs:(NSSet *)values;
+
++ (NSArray *)personsFromArray:(NSArray *)tempPersons withManagedObjectContext:(NSManagedObjectContext *)managedObjectContext;
 
 @end

@@ -2,11 +2,12 @@
 //  AppDelegate.m
 //  Week4TimedAssessment
 //
-//  Created by Kyle Magnesen on 1/29/15.
+//  Created by Kyle Magnesen on 1/30/15.
 //  Copyright (c) 2015 MobileMakers. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
+    ViewController *controller = (ViewController *)navigationController.topViewController;
+    controller.managedObjectContext = self.managedObjectContext;
+
     return YES;
 }
 

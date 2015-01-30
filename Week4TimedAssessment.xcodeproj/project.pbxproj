@@ -15,6 +15,12 @@
 		F91D60061A7B4551000CE1CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F91D60051A7B4551000CE1CD /* Images.xcassets */; };
 		F91D60091A7B4551000CE1CD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F91D60071A7B4551000CE1CD /* LaunchScreen.xib */; };
 		F91D60151A7B4551000CE1CD /* Week4TimedAssessmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D60141A7B4551000CE1CD /* Week4TimedAssessmentTests.m */; };
+		F91D60201A7B4989000CE1CD /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D601F1A7B4989000CE1CD /* Person.m */; };
+		F91D60231A7B498A000CE1CD /* Color.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D60221A7B498A000CE1CD /* Color.m */; };
+		F91D60261A7B498A000CE1CD /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D60251A7B498A000CE1CD /* Dog.m */; };
+		F91D602A1A7B4F9D000CE1CD /* DogsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D60291A7B4F9D000CE1CD /* DogsViewController.m */; };
+		F91D602D1A7B4FCC000CE1CD /* AddDogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D602C1A7B4FCC000CE1CD /* AddDogViewController.m */; };
+		F91D60301A7B5413000CE1CD /* DogOwner.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D602F1A7B5413000CE1CD /* DogOwner.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +48,18 @@
 		F91D600E1A7B4551000CE1CD /* Week4TimedAssessmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Week4TimedAssessmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F91D60131A7B4551000CE1CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F91D60141A7B4551000CE1CD /* Week4TimedAssessmentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Week4TimedAssessmentTests.m; sourceTree = "<group>"; };
+		F91D601E1A7B4989000CE1CD /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		F91D601F1A7B4989000CE1CD /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		F91D60211A7B498A000CE1CD /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
+		F91D60221A7B498A000CE1CD /* Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Color.m; sourceTree = "<group>"; };
+		F91D60241A7B498A000CE1CD /* Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		F91D60251A7B498A000CE1CD /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		F91D60281A7B4F9D000CE1CD /* DogsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DogsViewController.h; sourceTree = "<group>"; };
+		F91D60291A7B4F9D000CE1CD /* DogsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DogsViewController.m; sourceTree = "<group>"; };
+		F91D602B1A7B4FCC000CE1CD /* AddDogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddDogViewController.h; sourceTree = "<group>"; };
+		F91D602C1A7B4FCC000CE1CD /* AddDogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddDogViewController.m; sourceTree = "<group>"; };
+		F91D602E1A7B5413000CE1CD /* DogOwner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DogOwner.h; sourceTree = "<group>"; };
+		F91D602F1A7B5413000CE1CD /* DogOwner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DogOwner.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,12 +103,11 @@
 			children = (
 				F91D5FF91A7B4551000CE1CD /* AppDelegate.h */,
 				F91D5FFA1A7B4551000CE1CD /* AppDelegate.m */,
-				F91D5FFF1A7B4551000CE1CD /* ViewController.h */,
-				F91D60001A7B4551000CE1CD /* ViewController.m */,
-				F91D60021A7B4551000CE1CD /* Main.storyboard */,
+				F91D60311A7B541E000CE1CD /* Custom Object */,
+				F91D60411A7C02DF000CE1CD /* View & View Controller */,
+				F91D60271A7B499F000CE1CD /* Core Data & Files */,
 				F91D60051A7B4551000CE1CD /* Images.xcassets */,
 				F91D60071A7B4551000CE1CD /* LaunchScreen.xib */,
-				F91D5FFC1A7B4551000CE1CD /* Week4TimedAssessment.xcdatamodeld */,
 				F91D5FF51A7B4551000CE1CD /* Supporting Files */,
 			);
 			path = Week4TimedAssessment;
@@ -120,6 +137,43 @@
 				F91D60131A7B4551000CE1CD /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F91D60271A7B499F000CE1CD /* Core Data & Files */ = {
+			isa = PBXGroup;
+			children = (
+				F91D5FFC1A7B4551000CE1CD /* Week4TimedAssessment.xcdatamodeld */,
+				F91D60211A7B498A000CE1CD /* Color.h */,
+				F91D60221A7B498A000CE1CD /* Color.m */,
+				F91D60241A7B498A000CE1CD /* Dog.h */,
+				F91D60251A7B498A000CE1CD /* Dog.m */,
+				F91D601E1A7B4989000CE1CD /* Person.h */,
+				F91D601F1A7B4989000CE1CD /* Person.m */,
+			);
+			name = "Core Data & Files";
+			sourceTree = "<group>";
+		};
+		F91D60311A7B541E000CE1CD /* Custom Object */ = {
+			isa = PBXGroup;
+			children = (
+				F91D602E1A7B5413000CE1CD /* DogOwner.h */,
+				F91D602F1A7B5413000CE1CD /* DogOwner.m */,
+			);
+			name = "Custom Object";
+			sourceTree = "<group>";
+		};
+		F91D60411A7C02DF000CE1CD /* View & View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F91D60021A7B4551000CE1CD /* Main.storyboard */,
+				F91D5FFF1A7B4551000CE1CD /* ViewController.h */,
+				F91D60001A7B4551000CE1CD /* ViewController.m */,
+				F91D60281A7B4F9D000CE1CD /* DogsViewController.h */,
+				F91D60291A7B4F9D000CE1CD /* DogsViewController.m */,
+				F91D602B1A7B4FCC000CE1CD /* AddDogViewController.h */,
+				F91D602C1A7B4FCC000CE1CD /* AddDogViewController.m */,
+			);
+			name = "View & View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,7 +278,13 @@
 			files = (
 				F91D5FFB1A7B4551000CE1CD /* AppDelegate.m in Sources */,
 				F91D5FFE1A7B4551000CE1CD /* Week4TimedAssessment.xcdatamodeld in Sources */,
+				F91D60201A7B4989000CE1CD /* Person.m in Sources */,
+				F91D602A1A7B4F9D000CE1CD /* DogsViewController.m in Sources */,
+				F91D602D1A7B4FCC000CE1CD /* AddDogViewController.m in Sources */,
+				F91D60231A7B498A000CE1CD /* Color.m in Sources */,
+				F91D60261A7B498A000CE1CD /* Dog.m in Sources */,
 				F91D60011A7B4551000CE1CD /* ViewController.m in Sources */,
+				F91D60301A7B5413000CE1CD /* DogOwner.m in Sources */,
 				F91D5FF81A7B4551000CE1CD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
